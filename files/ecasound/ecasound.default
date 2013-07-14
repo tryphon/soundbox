@@ -1,0 +1,6 @@
+RUN=yes
+
+USER=boxuser
+GROUP=audio
+
+DAEMON_OPTS="--server -b:4096 -z:nointbuf -z:mixmode,sum -s /etc/ecasound/ecasound.ecs"
