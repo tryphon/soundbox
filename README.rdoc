@@ -1,0 +1,5 @@
+== SYNOPSYS
+
+Create a soundbox disk image (in dist/) :
+
+  rake soundbox:dist
