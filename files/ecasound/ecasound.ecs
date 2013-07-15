@@ -3,9 +3,9 @@
 -o loop,pre
 
 -a:low,mid,high -i loop,pre
--a:low -el:lowpass_iir,168,2 -el:sc4,0,100,200,-12,3,5,0
--a:mid -el:bandpass_iir,868,1400,2 -el:sc4,0,100,200,-12,3,5,0
--a:high -el:highpass_iir,1568,2 -el:sc4,0,100,200,-12,3,5,0
+-a:low -el:lowpass_iir,168,2 -el:sc4,0,100,200,-15,3,5,0
+-a:mid -el:bandpass_iir,868,1400,2 -el:sc4,0,100,200,-15,3,5,0
+-a:high -el:highpass_iir,1568,2 -el:sc4,0,100,200,-15,3,5,0
 -a:low,mid,high -o loop,post
 
 -a:post -i loop,post
