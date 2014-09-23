@@ -1,6 +1,9 @@
-dist
-build
+/dist
+/build
 *~
-local.rb
-puppet.log
-.bundle/*
+/local.rb
+/puppet.log
+/log/*
+/tmp/*
+/.ruby-version
+/.bundle
