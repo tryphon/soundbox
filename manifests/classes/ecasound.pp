@@ -21,11 +21,13 @@ class ecasound::daemon {
   }
 
   file { '/etc/init.d/ecasound':
-    source => 'puppet:///files/ecasound/ecasound.init'
+    source => 'puppet:///files/ecasound/ecasound.init',
+    require => Package['ecasound']
   }
   exec { 'update-rc.d-ecasound':
     command => 'insserv ecasound',
-    unless => 'ls /etc/rc?.d/S*ecasound > /dev/null 2>&1'
+    unless => 'ls /etc/rc?.d/S*ecasound > /dev/null 2>&1',
+    require => File['/etc/init.d/ecasound']
   }
 
   file { '/etc/default/ecasound':
